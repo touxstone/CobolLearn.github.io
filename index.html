@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn COBOL Interactively</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+    {
+        "imports": {
+            "highlight.js": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js"
+        },
+        "scopes": {
+            "/chapters/": {
+                
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="app">
+        <header id="mobile-header">
+            <button id="menu-toggle-btn" aria-label="Toggle Menu" aria-expanded="false">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <h1 class="logo mobile-logo"><a href="#">COBOL<span class="logo-light">Learn</span></a></h1>
+        </header>
+        <nav id="sidebar">
+            <h1 class="logo desktop-logo"><a href="#">COBOL<span class="logo-light">Learn</span></a></h1>
+            <div id="progress-tracker">
+                <h2>Progress</h2>
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="progress-text">0% Complete</p>
+            </div>
+            <ul id="chapter-list"></ul>
+        </nav>
+        <main id="main-content">
+            <div id="content-container">
+                <!-- Content will be injected here by JavaScript -->
+            </div>
+             <div id="navigation-buttons">
+                <button id="prev-btn" class="nav-btn">Previous Chapter</button>
+                <button id="next-btn" class="nav-btn">Next Chapter</button>
+            </div>
+        </main>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
